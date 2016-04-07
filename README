@@ -1,5 +1,4 @@
-Sipago - v 0.1
-===========================
+#Sipago - v 0.1
 
 En el archivo /objetos/conexion.php coloca los datos para conectarte a la base de datos(direccion ip o url,usuario y contraseña).
 En la carpeta _.db se encuentra la base de datos para restaurar en el servidor mysql.
