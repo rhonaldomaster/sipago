@@ -1,0 +1,59 @@
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px; /*--Define el ancho de las tabs--*/
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+	width: 100%;
+	font-size: 12px;
+}
+
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 31px; /*--Sustrae 1px de la altura de la lista desordenada--*/
+	line-height: 31px; /*--Alineamiento vertical del texto dentro de la tabla--*/
+	border: 1px solid #999;
+	border-left: none;
+	margin-bottom: -1px; /*--Desplaza los item de la lista abajo 1px--*/
+	overflow: hidden;
+	position: relative;
+	background: #e0e0e0;
+}  
+
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	font-size: 1.2em;
+	padding: 0 20px;
+	border: 1px solid #fff;
+	outline: none;
+}  
+
+ul.tabs li a:hover {
+	background: #ccc; 
+}  
+
+html ul.tabs li.active, html ul.tabs li.active a:hover  {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.tab_container {
+	border: 1px solid #999;
+	border-top: none;
+	overflow: hidden;
+	clear: both;
+	float: left; width: 100%;
+	background: #fff;
+	font-size: 12px;
+}  
+
+.tab_content {
+	padding: 20px;
+	font-size: 1.2em;
+}

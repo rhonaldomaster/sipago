@@ -1,0 +1,254 @@
+/*layout.css*/
+/*#9999FF*/
+/* para s=16px -> 1px = 1/s = 0.06rem */
+html, div, map, dt, isindex, form, header, aside, section, section, article, footer {  
+	display: block;  
+}
+*{
+	font-family: 'Open Sans', Helvetica, Arial, Verdana, sans-serif;
+}
+html, body {
+	background: white;
+	font-family: 'Open Sans', Helvetica, Arial, Verdana, sans-serif;
+	font-size: 1rem;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;	
+}
+div.logo{
+	background: url(../img/imglogo.png) left center no-repeat ;
+	height: 6.8rem;
+	margin-top: 1rem;
+	/*width: 20rem;*/
+}
+div.logo h1{
+	color: #9ACD32;
+	padding-left: 8rem;
+	padding-top: 2rem;
+	text-shadow: 0.1rem -0.1rem 0.3rem;
+}
+div.logo h4{
+	color: #D0D0D0;
+	padding-left: 8rem;
+	text-shadow: 0.1rem -0.1rem 0.3rem;
+}
+h1 {
+    font-size: 2.2rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.3rem;
+}
+h4 {
+    font-size: 1.1rem;
+}
+.clear {
+	clear: both;
+}
+header{
+	/*border-bottom: 0.1rem solid #9ACD32;*/
+	box-shadow: 0.1rem 0 0.5rem #9ACD32;
+	margin-bottom: 0.2rem;
+}
+header h1{
+	/*margin-top: 0.4rem;*/
+}
+section#main {
+	margin-top: 1.1rem;
+	min-height: 27.5rem;
+	padding-top: 2rem;
+	padding-left: 2rem;
+}
+div#mainbar{
+	background: white;
+	border-radius: 0 0 0.3rem 0.3rem;
+	box-shadow: 0 0 1.2rem #9ACD32;
+	left: 0;
+	padding: 0.3rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 6;
+}
+div#mainbar div{
+	display: inline;
+}
+div#mainbar div#container1{
+	float:left;
+	max-width: 48%;
+	width: 48%;
+}
+div.nomuser{
+	float: right;
+	max-width: 48%;
+	padding-right: 0.3rem;
+	position: relative;
+	text-align: right;
+	width: 48%;
+}
+div.nomuser div{
+	display: inline;
+}
+div#ingreso{
+	
+}
+div#transparency{
+	
+}
+.info, .success, .warning, .error, .validation {
+	border: 0.1rem solid;
+	margin: 0.8rem 0;
+	padding:1rem 0.8rem 1rem 3.5rem;
+	background-repeat: no-repeat;
+	background-position: 0.8rem center;
+}
+.info {
+	color: #00529B;
+	background-color: #BDE5F8;
+}
+.success {
+	color: #4F8A10;
+	/*background-color: #DFF2BF;*/
+	background-color: #9ACD32;
+}
+.warning {
+	color: #9F6000;
+	background-color: #FEEFB3;
+}
+.error {
+	color: #D8000C;
+	background-color: #FFBABA;
+}
+div#sysadvices{
+	overflow: hidden;
+	/*position: relative;*/
+	width:100%;
+}
+div#sysadvices p{
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	width: 100%;
+}
+div#sysadvices p{
+	transform:translateX(100%);
+}
+@keyframes left-one {
+	0%	{
+		transform:translateX(100%);
+	}
+	10% {
+		transform:translateX(0);
+	}
+	40% {
+		transform:translateX(0);
+	}
+	50% {
+		transform:translateX(-100%);
+	}
+	100%{
+		transform:translateX(-100%);
+	}
+}
+@keyframes left-two {
+	0% {
+		transform:translateX(100%);
+	}
+	50% {
+		transform:translateX(100%);
+	}
+	60% {
+		transform:translateX(0);		
+	}
+	90% {
+		transform:translateX(0);		
+	}
+	100%{
+		transform:translateX(-100%);
+	}
+}
+div#sysadvices p:nth-child(1) {
+	animation: left-one 20s ease infinite;
+}
+div#sysadvices p:nth-child(2) {
+	animation: left-two 20s ease infinite;
+}
+footer{
+	text-align: center;
+}
+div.logout{
+	background: url(../img/icn_logout.png) center center no-repeat;
+	border-radius: 1rem;
+	box-shadow: 0px 0px 5px;
+	color: #9ACD32;
+	cursor: pointer;
+	display: inline;
+	min-width: 2rem;
+}
+div.logout:hover{
+	background-color: #9ACD32;
+	box-shadow: 0 0 0.5rem black;
+}
+#formlogin legend{
+	background-color: #f5f5f1;
+	border-radius: 1rem;
+	box-shadow: 0 -3px 3px #9ACD32;
+	padding: 2px;
+}
+#formlogin fieldset{
+	/*border: 1px solid #9ACD32;*/
+	background-color: #f5f5f1;
+	border-radius: 1rem;
+	box-shadow: 0 0 10px #9ACD32;
+	color: black;
+	margin: 0 auto;
+	padding: 1rem;
+	width: 20rem;
+}
+#formlogin input:hover{
+	box-shadow: 0 0 5px #9ACD32;
+}
+
+.tablesorter {
+	width: 100%;
+}
+
+.tablesorter td{
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px dotted #ccc;
+}
+
+.tablesorter thead tr {
+	height: 34px;
+	background: url(../img/table_sorter_header.png) repeat-x;
+	text-align: center;
+	text-indent: 10px;
+	cursor: pointer;
+}
+
+.tablesorter thead th{
+	white-space:nowrap;
+	vertical-align: middle;
+}
+
+.tablesorter td {
+	padding: 15px 10px;
+}
+
+.tablesorter td.center{
+	text-align:center;
+}
+
+.tablesorter input[type=image] {
+	margin-right: 10px;
+}
+
+td.tdtit, th{
+	background-color: #9ACD32;
+	border: 1px solid;
+	color: white;
+}
