@@ -13,10 +13,10 @@
 		private $link;
 
 		public function __construct() {
-			$this->dbhost = "192.168.120.83";
+			$this->dbhost = "localhost";
 			$this->dbname = "sipago";
-			$this->dbuser = "tufinanc";
-			$this->dbpasswd = "BarranQuilla01ES";
+			$this->dbuser = "sipago_user";
+			$this->dbpasswd = "sipago_password";
 		}
 
 		public function conectar() {
